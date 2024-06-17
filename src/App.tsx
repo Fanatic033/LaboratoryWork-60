@@ -42,12 +42,12 @@ const App = () => {
     } else
         return (
             <>
-                <div>
+                <div className="flex-fill">
                     {posts.map(post => (
                         <Messages post={post} key={post._id}/>
                     ))}
                 </div>
-                <div>
+                <div className='ms-5'>
                     <SendMessage onSendMessage={sendNewMessage}/>
                 </div>
             </>
